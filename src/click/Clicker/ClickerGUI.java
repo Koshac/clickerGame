@@ -62,12 +62,6 @@ public class ClickerGUI extends JDialog  {
             upgradeCostMonitor.setText(String.valueOf(costUpgrade));
         }else{
             cashMonitor.setText("Недостаточно денег");
-            try {
-                Thread.currentThread().sleep(1500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            cashMonitor.setText(String.valueOf(cash));
         }
     }
     private void  onClick(){
